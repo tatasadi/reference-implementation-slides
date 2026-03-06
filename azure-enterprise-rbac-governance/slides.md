@@ -46,13 +46,40 @@ p, li {
 .highlight {
   @apply text-purple-400 font-semibold;
 }
+
+.slide-counter {
+  @apply absolute bottom-8 right-8 bg-purple-500/20 border-2 border-purple-400 rounded-full px-6 py-3 text-2xl font-semibold text-purple-300;
+}
 </style>
 
 <!-- Slide 1 - Hook -->
 <div class="flex flex-col justify-center items-center h-full text-center px-12">
-  <h1 class="!text-8xl !mb-12">Azure RBAC Governance</h1>
-  <h2 class="!text-6xl !mb-8">for Enterprise Environments</h2>
-  <p class="subtitle !text-5xl mt-8">A simple architecture model for controlling access in Azure</p>
+  <!-- Top badge -->
+  <div class="bg-purple-500/30 border-2 border-purple-400 rounded-full px-8 pb-4 mb-8">
+    <p class="!text-3xl text-purple-300 font-bold !mb-0">🔐 Azure Security</p>
+  </div>
+
+  <!-- Attention-grabbing stat -->
+  <div class="mb-6">
+    <p class="!text-9xl font-black text-red-400 !mb-2 !leading-none">80%</p>
+    <p class="!text-4xl text-gray-300 !mb-0">of Azure environments struggle with this</p>
+  </div>
+
+  <!-- Main title -->
+  <h1 class="!text-8xl !mb-6 !mt-8">RBAC Governance</h1>
+  <h2 class="!text-5xl !mb-10 text-gray-300 font-light">The enterprise access control challenge</h2>
+
+  <!-- Value proposition -->
+  <div class="bg-gradient-to-r from-purple-500/20 to-violet-500/20 border-l-4 border-purple-400 rounded-r-2xl px-10 py-6 mt-4">
+    <p class="!text-4xl text-purple-200 !mb-0">Learn how to prevent privilege sprawl and unauthorized access at scale</p>
+  </div>
+
+  <!-- Swipe indicator -->
+  <div class="mt-10">
+    <p class="!text-3xl text-gray-400 !mb-0">👉 Swipe for the solution • 7 slides</p>
+  </div>
+
+  <div class="slide-counter">1/8</div>
 </div>
 
 ---
@@ -84,6 +111,7 @@ layout: default
   </div>
 
   <p class="!text-4xl text-purple-300 mt-12 font-semibold">Over time this becomes difficult to control.</p>
+  <div class="slide-counter">2/8</div>
 </div>
 
 ---
@@ -115,6 +143,7 @@ layout: default
   </div>
 
   <p class="!text-4xl text-purple-300 mt-12 font-semibold">This is where many Azure environments struggle.</p>
+  <div class="slide-counter">3/8</div>
 </div>
 
 ---
@@ -146,6 +175,7 @@ layout: default
   </div>
 
   <p class="!text-4xl text-purple-300 mt-12 font-semibold">This creates controlled and auditable access.</p>
+  <div class="slide-counter">4/8</div>
 </div>
 
 ---
@@ -177,6 +207,7 @@ layout: default
   <div class="mt-10 bg-purple-900/30 border-l-4 border-purple-400 px-8 py-5 rounded-r-xl">
     <p class="!text-3xl text-gray-200"><span class="text-purple-300 font-bold">Key rule:</span> No direct user → role assignments</p>
   </div>
+  <div class="slide-counter">5/8</div>
 </div>
 
 ---
@@ -212,6 +243,7 @@ layout: default
   </div>
 
   <p class="!text-4xl text-purple-300 mt-12 font-semibold">This creates a controlled governance model.</p>
+  <div class="slide-counter">6/8</div>
 </div>
 
 ---
@@ -247,4 +279,30 @@ layout: default
   </div>
 
   <p class="!text-4xl text-purple-400 font-semibold">Project details in the comments. 👇</p>
+  <div class="slide-counter">7/8</div>
+</div>
+
+---
+layout: default
+---
+
+<!-- Slide 8 - Final CTA Slide -->
+<div class="flex flex-col justify-center items-center h-full text-center py-12">
+  <div class="mb-6">
+    <img src="https://stta.blob.core.windows.net/portfolio/ehsan.jpg" alt="Ehsan Tatasadi" class="w-56 h-56 rounded-full mx-auto border-8 border-purple-500 shadow-2xl object-cover">
+  </div>
+
+  <h1 class="!text-7xl !mb-4">Ehsan Tatasadi</h1>
+  <p class="subtitle !text-4xl text-gray-300 !mb-12">Senior Azure Engineer (Platform & DevOps)</p>
+
+  <div class="bg-purple-500/20 border-2 border-purple-400 rounded-3xl px-10 py-6 mb-10">
+    <p class="!text-3xl text-gray-200">💬 What would you implement first in your environment?</p>
+  </div>
+
+  <div class="bg-purple-600 rounded-3xl px-14 py-6 mb-10">
+    <p class="!text-4xl text-white font-bold">👉 Follow for more Azure tips</p>
+  </div>
+
+  <p class="!text-3xl text-gray-400 font-semibold">#Azure #DevOps #CloudEngineering</p>
+  <div class="slide-counter">8/8</div>
 </div>
